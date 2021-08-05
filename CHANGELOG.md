@@ -1,2 +1,1 @@
-* [38574de] Migrate files from wpdtrt-dbth, add documentation and unit tests
-* [2552ed2] Generate new plugin
+* [b77c1d5] Generate new plugin, migrate files from wpdtrt-dbth, add documentation and unit tests
