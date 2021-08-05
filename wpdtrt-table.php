@@ -11,7 +11,7 @@
  * Plugin Name:  DTRT Table
  * Plugin URI:   https://github.com/dotherightthing/wpdtrt-table
  * Description:  Shortcode to author a vertical table with overflow hint and scrollbar.
- * Version:      0.1.0
+ * Version:      1.0.0
  * Author:       Dan Smith
  * Author URI:   https://profiles.wordpress.org/&#39;dotherightthingnz
  * License:      GPLv2 or later
@@ -62,7 +62,7 @@ if ( ! defined( 'WPDTRT_TABLE_VERSION' ) ) {
 	 * $plugin_data = get_plugin_data( __FILE__ ); $plugin_version = $plugin_data['Version'];
 	 * ---
 	 */
-	define( 'WPDTRT_TABLE_VERSION', '0.1.0' );
+	define( 'WPDTRT_TABLE_VERSION', '1.0.0' );
 }
 
 if ( ! defined( 'WPDTRT_TABLE_PATH' ) ) {
