@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "wpdtrt-table",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shortcode to author a vertical table with overflow hint and scrollbar.",
   "keywords": [
     "table",
