@@ -261,7 +261,7 @@ function wpdtrt_table_plugin_init() {
 			'type'    => 'text',
 			'label'   => __( 'Cols', 'wpdtrt-table' ),
 			'size'    => 300,
-			'tip'     => __( 'Column content (td), separated by upright bars; rows are created based on number of headers', 'wpdtrt-table' ),
+			'tip'     => __( 'Column content (td), separated by upright bars; rows are created based on the number of headers', 'wpdtrt-table' ),
 			'default' => 'none',
 		),
 		'widths'      => array(
