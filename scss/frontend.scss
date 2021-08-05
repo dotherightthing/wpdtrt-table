@@ -1,0 +1,179 @@
+//
+// File: scss/frontend.scss
+//
+// Styles for the public front-end.
+//
+// Since:
+//   0.9.3 - DTRT WordPress Plugin Boilerplate Generator
+//
+
+// -------------------------------------------------------------------
+// Variables
+// -------------------------------------------------------------------
+
+@import '../node_modules/wpdtrt-scss/scss/variables/scss';
+@import 'variables/scss';
+
+// -------------------------------------------------------------------
+// Mixins
+// -------------------------------------------------------------------
+
+@import '../node_modules/wpdtrt-scss/scss/mixins';
+
+// -------------------------------------------------------------------
+// Extends
+// -------------------------------------------------------------------
+
+@import '../node_modules/wpdtrt-scss/scss/extends';
+
+// -------------------------------------------------------------------
+// Styles
+// -------------------------------------------------------------------
+
+// @import '../icons/icomoon/style.scss';
+@import '../node_modules/wpdtrt-scss/scss/_frontend';
+
+.wpdtrt-table {
+    $block: &;
+
+    --wpdtrt-table-wrapper-width: 100%;
+    --wpdtrt-table-bgcolor: var(--color-mono-light1);
+    --wpdtrt-table-bordercolor-top: var(--color-mono-dark);
+    --wpdtrt-table-bordercolor: var(--color-mono-medium2);
+    --wpdtrt-table-bgcolor-scrollbar: var(--color-mono-medium5);
+    --wpdtrt-table-color-scrollbar: transparent;
+    --wpdtrt-table-size-scrollbar: .375rem;
+    --wpdtrt-table-minlength-scrollbar: 1.5rem; // Minimum length of scrollbar thumb (width of horizontal, height of vertical)
+
+    padding: .5rem;
+    margin: 0 -.5rem 2rem;
+    overflow-x: auto;
+
+    table {
+        font-size: 80%;
+        line-height: 1.25;
+        border-collapse: separate;
+        border-spacing: 0;
+        box-shadow: 0 0 0 .5rem var(--wpdtrt-table-bgcolor);
+        margin-bottom: .5rem;
+    }
+
+    caption {
+        background-color: var(--wpdtrt-table-bgcolor-caption);
+        text-align: left;
+        text-transform: uppercase;
+        padding: .5rem;
+        border-bottom: 1px solid var(--wpdtrt-table-bordercolor-top);
+        margin: -.5rem -.5rem .5rem;
+
+        #{$block}__caption-liner {
+            display: block;
+            max-width: var(--wpdtrt-table-wrapper-width);
+        }
+
+        #{$block}__caption-hint {
+            display: block;
+            font-size: 85%;
+            font-weight: normal;
+            text-transform: none;
+            margin: .25rem 0 .15rem;
+        }
+    }
+
+    th,
+    td {
+        vertical-align: top;
+        background-color: var(--wpdtrt-table-bgcolor);
+        text-align: left;
+        padding: .5rem;
+        border-top: 1px solid var(--wpdtrt-table-bordercolor);
+        border-left: 1px solid var(--wpdtrt-table-bordercolor);
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    th {
+        font-size: 90%;
+        text-transform: uppercase;
+    }
+
+    thead {
+        th {
+            vertical-align: bottom;
+            border-top: 0;
+        }
+    }
+
+    tr {
+        > th,
+        > td {
+            &:first-child {
+                border-left: 0;
+            }
+        }
+
+        &:last-child {
+            > td {
+                padding-bottom: .3rem;
+            }
+        }
+    }
+
+    tbody {
+        > tr {
+            &:first-child {
+                > td {
+                    padding-top: .75rem;
+                }
+            }
+        }
+    }
+
+    // Permanently show the scrollbar
+    // https://github.com/ajaxorg/ace/issues/3887#issuecomment-621105123
+    // works in macOS Chrome, doesn't work in macOS Safari
+    &--scrollbar {
+        &::-webkit-scrollbar {
+            width: var(--wpdtrt-table-size-scrollbar);
+            height: var(--wpdtrt-table-size-scrollbar);
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: var(--wpdtrt-table-color-scrollbar);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--wpdtrt-table-bgcolor-scrollbar);
+            // Add :hover, :active as needed
+        }
+
+        &::-webkit-scrollbar-thumb:vertical {
+            min-height: var(--wpdtrt-table-minlength-scrollbar);
+        }
+
+        &::-webkit-scrollbar-thumb:horizontal {
+            min-width: var(--wpdtrt-table-minlength-scrollbar);
+        }
+    }
+
+    @include media('>=laptop') {
+        table {
+            width: calc(100% - .5rem - .5rem);
+        }
+
+        // apply width shortcode parameter
+        &__th {
+            @for $i from 1 through 9 {
+                &--#{$i * 10} {
+                    width: #{$i * 10%};
+                }
+            }
+        }
+    }
+}

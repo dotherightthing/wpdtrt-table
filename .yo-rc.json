@@ -1,0 +1,22 @@
+{
+  "generator-wpdtrt-plugin-boilerplate": {
+    "authorAbbreviation": "DTRT",
+    "authorEmail": "dev@dotherightthing.co.nz",
+    "authorName": "Dan Smith",
+    "authorSupportEmail": "support@dotherightthing.co.nz",
+    "authorWordPressName": "dotherightthingnz",
+    "description": "Shortcode to author a vertical table with overflow hint and scrollbar.",
+    "donateUrl": "https://dotherightthing.co.nz",
+    "generatorVersion": "0.9.3",
+    "githubUserName": "dotherightthing",
+    "license": "GPLv2 or later",
+    "licenseUrl": "http://www.gnu.org/licenses/gpl-2.0.html",
+    "name": "wpdtrt-table",
+    "nameFriendly": "DTRT Table",
+    "nameSafe": "wpdtrt_table",
+    "phpVersion": "7.2.20",
+    "defaultVersion": "0.1.0",
+    "tags": "table, responsive",
+    "wpVersion": "5.6"
+  }
+}

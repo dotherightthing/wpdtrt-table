@@ -1,0 +1,51 @@
+{
+    "name": "dotherightthing/wpdtrt-table",
+    "description": "Shortcode to author a vertical table with overflow hint and scrollbar.",
+    "type": "library",
+    "keywords": ["table", "responsive", "wordpress-plugin"],
+    "license": "ISC",
+    "authors": [
+        {
+            "name": "Dan Smith",
+            "email": "dev@dotherightthing.co.nz",
+            "homepage": "https://github.com/dotherightthing/wpdtrt-table",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "support@dotherightthing.co.nz",
+        "issues": "https://github.com/dotherightthing/wpdtrt-table/issues",
+        "source": "https://github.com/dotherightthing/wpdtrt-table",
+        "wiki": "https://github.com/dotherightthing/wpdtrt-table/wiki"
+    },
+    "require": {
+        "dotherightthing/wpdtrt-plugin-boilerplate": "^1.7.17"
+    },
+    "require-dev": {
+        "composer-plugin-api": "^1.0",
+        "wp-coding-standards/wpcs": "^0.14.1",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.4.4",
+        "phpunit/phpunit": "^7.5.14",
+        "psy/psysh": "~0.6",
+        "wp-cli/wp-cli": "^2.3"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/dotherightthing/wpdtrt-plugin-boilerplate"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/dotherightthing/wpdtrt-debug"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/dotherightthing/tgm-plugin-activation"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    }
+}

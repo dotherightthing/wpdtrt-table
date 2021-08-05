@@ -1,0 +1,23 @@
+//
+// File: scss/variables/_css.scss
+//
+// Since:
+//   0.9.3 - DTRT WordPress Plugin Boilerplate Generator
+//
+// Colours are specified in hsla values:
+// - Hue: 0 - 360 on a colour wheel (e.g. http://hslpicker.com/)
+// - Saturation: 0 (grayscale) - 100 (full colour)
+// - Lightness: 0% (black), 50% (average), 100% (completely light)
+// - Alpha
+//
+
+:root {
+    --wpdtrt-table-wrapper-width: 100%;
+    --wpdtrt-table-bgcolor: var(--color-mono-light1);
+    --wpdtrt-table-bordercolor-top: var(--color-mono-dark);
+    --wpdtrt-table-bordercolor: var(--color-mono-medium2);
+    --wpdtrt-table-bgcolor-scrollbar: var(--color-mono-medium5);
+    --wpdtrt-table-color-scrollbar: transparent;
+    --wpdtrt-table-size-scrollbar: .375rem;
+    --wpdtrt-table-minlength-scrollbar: 1.5rem; // Minimum length of scrollbar thumb (width of horizontal, height of vertical)
+}
