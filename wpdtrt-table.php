@@ -243,28 +243,28 @@ function wpdtrt_table_plugin_init() {
 	 * - <Options - Adding shortcode or widget options: https://github.com/dotherightthing/wpdtrt-plugin-boilerplate/wiki/Options:-Adding-shortcode-or-widget-options>
 	 */
 	$instance_options = array(
-		'caption'     => array(
+		'caption' => array(
 			'type'    => 'text',
 			'label'   => __( 'Caption', 'wpdtrt-table' ),
 			'size'    => 100,
 			'tip'     => __( 'Appears as a heading above the table', 'wpdtrt-table' ),
 			'default' => '',
 		),
-		'headers'     => array(
+		'headers' => array(
 			'type'    => 'text',
 			'label'   => __( 'Headers', 'wpdtrt-table' ),
 			'size'    => 100,
 			'tip'     => __( 'Column headers (th), separated by upright bars', 'wpdtrt-table' ),
 			'default' => 'none',
 		),
-		'cols'        => array(
+		'cols'    => array(
 			'type'    => 'text',
 			'label'   => __( 'Cols', 'wpdtrt-table' ),
 			'size'    => 300,
 			'tip'     => __( 'Column content (td), separated by upright bars; rows are created based on the number of headers', 'wpdtrt-table' ),
 			'default' => 'none',
 		),
-		'widths'      => array(
+		'widths'  => array(
 			'type'    => 'text',
 			'label'   => __( 'Widths', 'wpdtrt-table' ),
 			'size'    => 50,
@@ -307,10 +307,10 @@ function wpdtrt_table_plugin_init() {
 	 * - <Settings page - Adding a demo shortcode: https://github.com/dotherightthing/wpdtrt-plugin-boilerplate/wiki/Settings-page:-Adding-a-demo-shortcode>
 	 */
 	$demo_shortcode_params = array(
-		'caption'     => 'Demo table',
-		'widths'      => '20%|30%|auto',
-		'headers'     => 'Column 1|Column 2|Column 3',
-		'cols'        => 'A|B|C|1|2|3|Foo|Bar|Baz',
+		'caption' => 'Demo table',
+		'widths'  => '20%|30%|auto',
+		'headers' => 'Column 1|Column 2|Column 3',
+		'cols'    => 'A|B|C|1|2|3|Foo|Bar|Baz',
 	);
 
 	/**
