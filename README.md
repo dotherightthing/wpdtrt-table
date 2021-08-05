@@ -22,7 +22,7 @@ See `scss/variables/_css.scss`.
 
 ### Shortcode
 
-Please use the provided shortcode to embed a custom form:
+Please use the provided shortcode to embed a table:
 
 ```php
 <!-- within the editor -->
