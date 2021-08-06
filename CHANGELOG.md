@@ -1,2 +1,1 @@
-* [2ce85da] Lint PHP
-* [a016f65] Fix documentation
+* [0e5f9cf] Don't load generic wpdtrt-scss styles in plugins (dotherightthing/wpdtrt-scss#1)
